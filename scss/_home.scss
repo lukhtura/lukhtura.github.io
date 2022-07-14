@@ -1,0 +1,294 @@
+.home-intro-sect {
+    background-image: url(../img/big-logo.svg), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-color: #643e72;
+    padding: 200px 0;
+    position: relative;
+    border-radius: 0px 0px 12px 12px;
+
+    .container {
+        .container-logo {
+            margin-bottom: 40%;
+
+            &-header {
+                margin-top: 215px;
+                text-align: center;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 1.2;
+                color: #ffffff;
+            }
+
+            .scroll-button {
+                position: absolute;
+                bottom: 70%;
+                left: 50%;
+
+                &:hover .scroll-button-svg {
+                    stroke: $accent-color;
+                }
+            }
+        }
+
+        .tab-container {
+            margin-bottom: 60px;
+
+            .nav-link.active {
+                background: $gradient-reversed-color;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .me-3 {
+                margin-right: 0 !important;
+            }
+
+            .nav-link {
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 1.2;
+                color: #b3b3ba !important;
+                margin: 15px 60px 15px 0;
+                width: 375px;
+                text-align: right;
+                padding: 0;
+                transition: 0.3s;
+
+                &:hover {
+                    color: $accent-color !important;
+                }
+
+                &:first-of-type {
+                    margin-top: 15px;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .vr {
+                background: rgba(255, 255, 255, 0.3);
+                width: 4px;
+                max-height: 100%;
+                margin-right: 60px;
+            }
+
+            .block-heading {
+                color: #ffffff;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 1.2;
+                margin-bottom: 30px;
+            }
+
+            .block-text {
+                font-size: 19px;
+                line-height: 1.6;
+                color: white;
+            }
+
+            .nav-link {
+                color: white;
+            }
+        }
+    }
+
+    .services-container {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 60px;
+    }
+}
+
+.echo-1 {
+    margin: 0 auto;
+    max-width: 97%;
+    background-color: #CACADB;
+    border-radius: 0px 0px 12px 12px;
+    height: 10px;
+}
+
+.echo-2 {
+    margin: 0 auto;
+    max-width: 94%;
+    background-color: #E7E7F2;
+    border-radius: 0px 0px 12px 12px;
+    height: 10px;
+    margin-bottom: 60px;
+}
+
+.home-slider-sect,
+.carousel-item {
+    background-color: $lightgrey-color;
+}
+
+.home-slider-sect {
+    background-color: white;
+}
+
+.carousel-inner {
+    border-radius: 12px;
+    width: 1320px;
+    height: 344px;
+}
+
+.carousel-indicators {
+    margin-top: 30px;
+    bottom: auto;
+}
+
+.carousel-indicators [data-bs-target] {
+    background: #24a3ff;
+    opacity: 0.2;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    border-top: 0px solid transparent;
+    border-bottom: 0px solid transparent;
+    margin: 0 7px;
+}
+
+.active {
+    opacity: 1 !important;
+}
+
+.slider-row {
+    display: flex;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.slider-text {
+    padding: 30px;
+
+    @media (max-width: 1280px) {
+        max-width: 65%;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+
+    .section-heading {
+        margin: 5px 0 0;
+    }
+
+    &-name {
+        margin: 30px 0 6px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #b3b3ba;
+    }
+
+    &-role {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #b3b3ba;
+    }
+}
+
+.slider-img {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        height: 500px;
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media (max-width: 768px) {
+            transform: translate(-50%, -50%) scale(1.25);
+        }
+
+        @media (max-width: 420px) {
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.clients-sect {
+
+    .clients-subheading {
+        margin-top: 106px;
+        text-align: center;
+        color: #323264;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        text-transform: uppercase;  
+    }
+
+    .clients-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1440px;
+        margin: 30px auto; //внимание на марджин
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 420px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .clients-item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.publications-sect {
+
+    @media (max-width: 1440px) {
+        display: none;
+    }
+
+    background-color: $lightgrey-color;
+    padding: 30px 0;
+    
+    .section-heading {
+        margin: 10px 0 30px;
+    }
+
+    .publications-sect-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+
+        .publications-sect-item {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            width: 420px;
+            height: 450px;
+
+            .publications-sect-item-text {
+                padding: 0 30px;
+
+                .publications-hr {
+                    height: 4px;
+                    background-color: #E6E6F0;
+                }
+            }
+        }
+    }
+}
